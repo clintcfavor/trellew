@@ -1,12 +1,11 @@
 <template>
-  <DefaultLayout />
+  <div><p>Navbar</p></div>
 </template>
 <script lang="ts">
-import DefaultLayout from '@/layout/default-layout.vue';
 import { defineComponent } from 'vue';
+
 export default defineComponent({
-  components: { DefaultLayout },
+  name: 'Navbar',
 });
 </script>
-
-<style></style>
+<style scoped></style>
