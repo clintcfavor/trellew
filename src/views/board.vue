@@ -1,7 +1,12 @@
 <template>
-  <p>Board</p>
-  <BoardHeader />
-  <BoardArea />
+  <div class="c-board">
+    <div class="c-board__header">
+      <BoardHeader />
+    </div>
+    <div class="c-board__area">
+      <BoardArea />
+    </div>
+  </div>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
@@ -15,4 +20,4 @@ export default defineComponent({
   },
 });
 </script>
-<style scoped></style>
+<style lang="scss" scoped></style>

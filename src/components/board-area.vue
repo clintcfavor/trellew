@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="c-board-area">
     <p>Board Area</p>
     <Canvas />
   </div>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="c-canvas">
       <p>Canvas</p>
       <card />
   </div>
