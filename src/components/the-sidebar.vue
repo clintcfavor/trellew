@@ -1,12 +1,11 @@
 <template>
-  <DefaultLayout />
+  <div><p>Sidebar</p></div>
 </template>
 <script lang="ts">
-import DefaultLayout from '@/layout/default-layout.vue';
 import { defineComponent } from 'vue';
+
 export default defineComponent({
-  components: { DefaultLayout },
+  name: 'Sidebar',
 });
 </script>
-
-<style></style>
+<style scoped></style>

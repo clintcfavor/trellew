@@ -1,12 +1,11 @@
 <template>
-  <DefaultLayout />
+  <div><p>Board header</p></div>
 </template>
 <script lang="ts">
-import DefaultLayout from '@/layout/default-layout.vue';
 import { defineComponent } from 'vue';
+
 export default defineComponent({
-  components: { DefaultLayout },
+  name: 'BoardHeader',
 });
 </script>
-
-<style></style>
+<style scoped></style>
