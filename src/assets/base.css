@@ -116,27 +116,33 @@ button {
   line-height: inherit;
 }
 
-h1 {
+h1,
+.font-h1 {
   font-size: 2.75rem;
 }
 
-h2 {
+h2,
+.font-h2 {
   font-size: 2.25rem;
 }
 
-h3 {
+h3,
+.font-h3 {
   font-size: 2rem;
 }
 
-h4 {
+h4,
+.font-h4 {
   font-size: 1.75rem;
 }
 
-h5 {
+h5,
+.font-h5 {
   font-size: 1.5rem;
 }
 
-h6 {
+h6,
+.font-h6 {
   font-size: 1.25rem;
 }
 
@@ -198,22 +204,68 @@ h6 {
   background-color: transparent;
 }
 
+.p-0 {
+  padding: 0;
+}
+
+.m-0 {
+  margin: 0;
+}
+
 .my-1 {
- margin: .25rem 0;
+  margin: 0.25rem 0;
 }
 
 .my-2 {
- margin: .5rem 0;
+  margin: 0.5rem 0;
 }
 
 .my-3 {
- margin: .75rem 0;
+  margin: 0.75rem 0;
 }
 
 .my-4 {
- margin: 1rem 0;
+  margin: 1rem 0;
 }
 
 .my-5 {
- margin: 1.25rem 0;
+  margin: 1.25rem 0;
+}
+
+.mr-1 {
+  margin-right: 0.25rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.mr-3 {
+  margin-right: 0.75rem;
+}
+
+.mr-4 {
+  margin-right: 1rem;
+}
+
+.mr-5 {
+  margin-right: 1.25rem;
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+.font-xxs {
+  font-size: 0.5rem;
+}
+
+.font-xs {
+  font-size: 0.75rem;
+}
+
+.vertical-separator {
+  border: 0.5px solid #e3e3e347;
+  height: 50%;
+  margin: 1rem;
 }

@@ -1,5 +1,21 @@
 <template>
-  <div class="c-header"><p>Board header</p></div>
+  <div class="c-board__header d-flex align-items-center">
+    <div class="c-board-header__switcher t-btn d-flex align-items-center">
+      <i class="fas fa-align-left rotate-90 mr-5"></i>
+      <i class="fas fa-angle-down font-xs"></i>
+    </div>
+    <div class="c-board-header__board-name">
+      <h1 class="font-h5 m-0">Bossu XCorp</h1>
+    </div>
+    <div class="c-board-header__favorite t-btn">
+      <i class="fas fa-star"></i>
+    </div>
+    <div class="o-board-header__vertical-separator vertical-separator"></div>
+    <div class="c-board-header__organization-name t-btn">Bossu, Inc. ™˜šœ</div>
+    <div class="o-board-header__vertical-separator vertical-separator"></div>
+    <div class="c-board-header__users"></div>
+    <div class="c-board-header__invite t-btn">Invite</div>
+  </div>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
@@ -8,4 +24,15 @@ export default defineComponent({
   name: 'BoardHeader',
 });
 </script>
-<style scoped></style>
+<style lang="scss" scoped>
+.c-board-header {
+  &__board-switcher, &__favorite {
+    height: 84%;
+  }
+
+  &__board-name {
+    padding: 0 1rem;
+    color: #fff;
+  }
+}
+</style>
