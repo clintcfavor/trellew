@@ -1,5 +1,5 @@
 <template>
-  <div><p>Card</p></div>
+  <div class="c-card"><p>Card</p></div>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';

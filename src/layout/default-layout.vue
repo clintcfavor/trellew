@@ -1,8 +1,17 @@
 <template>
-  <p>LAYOUT</p>
-  <Navbar />
-  <Sidebar />
-  <Board />
+  <div class="c-layout">
+    <div class="c-navbar">
+      <Navbar />
+    </div>
+    <div class="o-container o-row">
+      <div class="o-container__left-side o-col">
+        <Sidebar />
+      </div>
+      <div class="o-container__right-side o-col">
+        <Board />
+      </div>
+    </div>
+  </div>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
@@ -17,4 +26,18 @@ export default defineComponent({
   },
 });
 </script>
-<style scoped></style>
+<style lang="scss" scoped>
+.c-layout {
+  & .c-navbar {
+
+  }
+  & .o-container {
+    &__left-side {
+
+    }
+    &__right-side {
+
+    }
+  }
+}
+</style>
