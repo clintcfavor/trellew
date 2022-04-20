@@ -12,6 +12,7 @@
 import { defineComponent } from 'vue';
 import BoardHeader from '@/components/board-header.vue';
 import BoardArea from '@/components/board-area.vue';
+
 export default defineComponent({
   name: 'Board',
   components: {

@@ -1,16 +1,24 @@
 <template>
   <div class="c-board-area">
     <p>Board Area</p>
-    <Canvas />
+    <Canvas v-for="canvas in canvases" :key="canvas.id" :canvas="canvas" />
   </div>
 </template>
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent, ref } from 'vue';
 import Canvas from '@/components/canvas.vue';
+import { Store } from '@/data/store';
+
 export default defineComponent({
   name: 'BoardArea',
   components: {
     Canvas,
+  },
+  setup() {
+    const store = new Store();
+    const canvases = ref(store.GetCanvases());
+    console.log('CANVASES: ', canvases);
+    return { canvases };
   },
 });
 </script>
