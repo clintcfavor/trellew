@@ -1,7 +1,11 @@
 <template>
   <div class="c-card">
-    <div v-if="isBlankCard">BLANK CARD</div>
-    <h4>tag count: {{ data.tagCount }}</h4>
+    <div class="c-card__blank is-blank" v-if="isBlankCard">BLANK CARD</div>
+    <div class="c-card__tag">
+      <span v-for="tag in data.tagCount" :key="tag.id">
+        <span class="c-card__tag-color"></span>
+      </span>
+    </div>
     <h4 v-if="data.hasImage">Has image</h4>
     <CardFooter
       v-if="showFooter"
@@ -45,4 +49,10 @@ export default defineComponent({
   },
 });
 </script>
-<style scoped></style>
+<style lang="scss" scoped>
+.c-card {
+  background: #fff;
+  margin-bottom: 0.5rem;
+  padding: 0.75rem;
+}
+</style>
