@@ -1,13 +1,11 @@
 <template>
-  <div class="c-layout">
-    <div class="c-navbar">
-      <Navbar />
-    </div>
-    <div class="o-container o-row">
+  <div class="c-layout t-min-vh-100 d-flex flex-column flex-grow-1">
+    <Navbar />
+    <div class="o-container o-row flex-grow-1">
       <div class="o-container__left-side o-col">
         <Sidebar />
       </div>
-      <div class="o-container__right-side o-col">
+      <div class="o-container__right-side o-col flex-grow-1">
         <Board />
       </div>
     </div>
@@ -26,18 +24,13 @@ export default defineComponent({
   },
 });
 </script>
-<style lang="scss" scoped>
-.c-layout {
-  & .c-navbar {
-
-  }
-  & .o-container {
-    &__left-side {
-
-    }
-    &__right-side {
-
-    }
+<style lang="scss">
+@import '../assets/base.css';
+.o-container {
+  &__left-side {
+    background: linear-gradient(180deg, #715e91, #5a8ae3);
+    padding: 0.5rem;
+    width: 4.3%;
   }
 }
 </style>
