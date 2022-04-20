@@ -70,8 +70,8 @@ body {
   background: var(--color-background);
   transition: color 0.5s, background-color 0.5s;
   line-height: 1.6;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
   font-size: 1rem;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -79,9 +79,14 @@ body {
   font-weight: 400;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
 }
 
 p {
@@ -100,11 +105,11 @@ img {
 }
 
 button {
-  border-radius: .75rem;
+  border-radius: 0.75rem;
 }
 
 input,
-button{
+button {
   margin: 0;
   font-family: inherit;
   font-size: inherit;
@@ -133,4 +138,82 @@ h5 {
 
 h6 {
   font-size: 1.25rem;
+}
+
+.o-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.o-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.t-min-vh-100 {
+  min-height: 100vh;
+}
+
+.t-btn {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  border-radius: 0.25rem;
+  border: 0;
+  padding: 0.25rem 1rem;
+  margin: 0.25rem;
+  color: #fff;
+  background-color: #01b8d9;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.my-1 {
+ margin: .25rem 0;
+}
+
+.my-2 {
+ margin: .5rem 0;
+}
+
+.my-3 {
+ margin: .75rem 0;
+}
+
+.my-4 {
+ margin: 1rem 0;
+}
+
+.my-5 {
+ margin: 1.25rem 0;
 }
