@@ -1,7 +1,7 @@
 <template>
   <div class="c-board-area">
     <p>Board Area</p>
-    <Canvas />
+    <Canvas v-for="canvas in canvases" :key="canvas.id" :canvas="canvas" />
   </div>
 </template>
 <script lang="ts">

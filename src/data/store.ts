@@ -1,10 +1,10 @@
-interface ICanvas {
+export interface ICanvas {
   id: number;
   cards: ICard[];
   title: string;
 }
 
-interface ICard {
+export interface ICard {
   id: number;
   assigneeCount: number;
   isWatching: boolean;
@@ -16,7 +16,7 @@ interface ICard {
   dateCreated?: Date;
 }
 
-interface ICheckbox {
+export interface ICheckbox {
   total: number;
   checkedCount: number;
 }
