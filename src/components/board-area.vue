@@ -1,5 +1,5 @@
 <template>
-  <div class="c-board-area">
+  <div class="c-board-area c-board-area d-flex flex-column flex-grow-1">
     <p>Board Area</p>
     <Canvas v-for="canvas in canvases" :key="canvas.id" :canvas="canvas" />
   </div>

@@ -1,11 +1,7 @@
 <template>
-  <div class="c-board">
-    <div class="c-board__header">
-      <BoardHeader />
-    </div>
-    <div class="c-board__area">
-      <BoardArea />
-    </div>
+  <div class="c-board d-flex flex-grow-1 flex-column">
+    <BoardHeader />
+    <BoardArea />
   </div>
 </template>
 <script lang="ts">
@@ -21,4 +17,8 @@ export default defineComponent({
   },
 });
 </script>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.c-board {
+  padding: 0.25rem 0.75rem;
+}
+</style>

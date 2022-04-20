@@ -5,7 +5,7 @@
       <div class="o-container__left-side o-col">
         <Sidebar />
       </div>
-      <div class="o-container__right-side o-col flex-grow-1">
+      <div class="o-container__right-side d-flex o-col flex-grow-1">
         <Board />
       </div>
     </div>
@@ -31,6 +31,9 @@ export default defineComponent({
     background: linear-gradient(180deg, #715e91, #5a8ae3);
     padding: 0.5rem;
     width: 4.3%;
+  }
+  &__right-side {
+    background: linear-gradient(45deg, #8687f3, #8687f3, #fc75a3, #fea8d7);
   }
 }
 </style>

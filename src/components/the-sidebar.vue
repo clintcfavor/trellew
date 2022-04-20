@@ -1,6 +1,6 @@
 <template>
   <div class="c-sidebar">
-    <div class="c-sidebar__company-icon"><img class="w-100" src="../assets/company-logo.jpg" /></div>
+    <div class="c-sidebar__company-icon"><img class="w-100" src="../assets/bossu-png.png" /></div>
     <div class="c-sidebar__expand d-flex align-items-center justify-content-center my-4"><i class="fas fa-angles-right t-btn bg-transparent"></i></div>
   </div>
 </template>

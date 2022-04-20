@@ -12,7 +12,7 @@
       <div class="c-navbar__add-icon t-btn"><i class="fas fa-plus"></i></div>
       <div class="c-navbar__notice-icon t-btn"><i class="fas fa-circle-exclamation"></i></div>
       <div class="c-navbar__alert-icon t-btn"><i class="fas fa-bell"></i></div>
-      <div class="c-navbar__user-icon t-btn"><i class="fas fa-user"></i></div>
+      <div class="c-navbar__user-icon"><img class="w-100" src="../assets/bossu1.png" /></div>
     </div>
   </div>
 </template>
@@ -39,6 +39,7 @@ export default defineComponent({
     border: 0;
     padding: 0.6rem;
     margin: 0.25rem;
+    font-size: 1.25rem;
     color: #fff;
     background-color: #01b8d9;
     text-align: right;
@@ -48,7 +49,7 @@ export default defineComponent({
     align-items: center;
     margin: 0 auto;
     img {
-      width: 5rem;
+      width: 6rem;
     }
   }
 
@@ -61,7 +62,10 @@ export default defineComponent({
     align-items: center;
     justify-content: center;
     border-radius: 100%;
-    width: 46px;
+    width: 34px;
+    border: 0;
+    margin: 0.25rem;
+    clip-path: circle(40%);
   }
 }
 </style>
