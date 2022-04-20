@@ -26,7 +26,7 @@ export default defineComponent({
 </script>
 <style lang="scss" scoped>
 .c-board-header {
-  &__board-switcher, &__favorite {
+  &__switcher, &__favorite {
     height: 84%;
   }
 
