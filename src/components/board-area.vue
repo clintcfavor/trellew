@@ -21,4 +21,8 @@ export default defineComponent({
   },
 });
 </script>
-<style scoped></style>
+<style scoped>
+.c-board-area {
+  padding: 0.5rem 0;
+}
+</style>

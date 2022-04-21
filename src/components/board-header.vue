@@ -10,11 +10,11 @@
     <div class="c-board-header__favorite t-btn">
       <i class="fas fa-star"></i>
     </div>
-    <div class="o-board-header__vertical-separator vertical-separator"></div>
+    <div class="vertical-separator"></div>
     <div class="c-board-header__organization-name t-btn">Bossu, Inc. ™˜šœ</div>
-    <div class="o-board-header__vertical-separator vertical-separator"></div>
+    <div class="vertical-separator"></div>
     <div class="c-board-header__users"></div>
-    <div class="c-board-header__invite t-btn">Invite</div>
+    <div class="c-board-header__invite t-btn font-xxs">Invite</div>
   </div>
 </template>
 <script lang="ts">
@@ -24,10 +24,14 @@ export default defineComponent({
   name: 'BoardHeader',
 });
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
 .c-board-header {
   &__switcher, &__favorite {
     height: 84%;
+  }
+
+  &__invite {
+    font-size: 11rem;
   }
 
   &__board-name {

@@ -5,6 +5,9 @@
       <div class="c-canvas__more-options"><i class="fas fa-ellipsis"></i></div>
     </div>
     <Card v-for="card in cards" :key="card.id" :card="card" />
+    <div class="c-canvas__add">
+      <i class="fas fa-plus"></i>
+    </div>
   </div>
 </template>
 <script lang="ts">
@@ -34,15 +37,17 @@ export default defineComponent({
 .c-canvas {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  flex-basis: 20%;
   background: #ebecf0;
   border-radius: 0.25rem;
   margin-right: 0.75rem;
   padding: 0.75rem;
+  margin-bottom: auto;
   &__top {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: .75rem;
   }
   &__title {
     padding: 0.25rem;

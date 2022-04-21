@@ -1,12 +1,17 @@
 <template>
   <div class="c-card">
-    <div class="c-card__blank is-blank" v-if="isBlankCard">BLANK CARD</div>
-    <div class="c-card__tag">
-      <span v-for="tag in data.tagCount" :key="tag.id">
-        <span class="c-card__tag-color"></span>
+    <div class="o-card__blank is-blank" v-if="isBlankCard"></div>
+    <div class="c-card__tag d-flex">
+      <span v-for="tag in data.tagCount" :key="tag">
+        <span class="c-card__tag-color mr-2"></span>
       </span>
     </div>
-    <h4 v-if="data.hasImage">Has image</h4>
+    <div class="c-card__image" v-if="data.hasImage">
+      <img src="../assets/bossu4.png" />
+    </div>
+    <div class="c-card__image is-blank" v-if="!data.hasImage">
+      <div class="o-card__blank" v-if="isBlankCard"></div>
+    </div>
     <CardFooter
       v-if="showFooter"
       :assigneeCount="data.assigneeCount"
@@ -51,8 +56,35 @@ export default defineComponent({
 </script>
 <style lang="scss" scoped>
 .c-card {
+  display: flex;
   background: #fff;
   margin-bottom: 0.5rem;
+  flex-direction: column;
   padding: 0.75rem;
+  box-shadow: 0 1px 2px #adadad;
+  border-radius: 0.25rem;
+  &__image {
+    display: flex;
+    justify-content: center;
+    height: 20rem;
+    margin-top: 1.25rem;
+    img {
+      height: 100%;
+    }
+  }
+  &__image.is-blank {
+    height: 2rem;
+    width: 10rem;
+    & .o-card__blank {
+      width: 100%;
+    }
+  }
+  &__tag-color {
+    display: block;
+    background: rgb(103, 128, 238);
+    border-radius: 25px;
+    width: 2rem;
+    height: 0.5rem;
+  }
 }
 </style>
